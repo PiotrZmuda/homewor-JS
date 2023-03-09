@@ -26,13 +26,14 @@
 
 // console.log("=", "Jest on znakiem przypisania wartości z prawej strony tego znaku, do zmiennej znajdującej się po lewej stronie")
 // console.log( "==","Sprawdza czy wartość po lewej stronie jest równa wartości po prawej stronie bez względu na ich typ")
-// console.log("===", "Wartość i typ; sprawdza czy wartość po lewej stronie jest równa wartości po prawej stronie biorąc pod uwagę ich typ")
+// console.log("===", "Sprawdza czy wartość po lewej stronie jest równa wartości po prawej stronie biorąc pod uwagę ich typ")
 
 //c) napisz krótko czym różni się typ referencyjny od typu prostego, oraz podaj przykłady tych typów. Odpowiedź wyświetl w konsoli
 
 // console.log("W typach referencyjnych wartość jest przekazywana za pomocą referencji tzn.za pomocą informacji, w jakim miejscu w pamięci jest przetrzymywana wartość i są to tablice, obiekty i funkcje, a w typach prostych informacja jest przekazywana za pomocą wartości i typami prostymi są np. stringi czy numbery. ");
 
 //d) spróbuj przekonwertować i wyświetlić w konsoli poniższe wartości:
+
 // let val = 0 (przekonwertuj na typ Boolean)
 // let val = 0;
 // console.log(Boolean(val))
@@ -43,7 +44,11 @@
 
 // // let num = 007 (przekonwertuj na String)
 // let num = 007;
-// console.log(num.toString()) -----------------------------------------
+
+// let str = num.toString(10);
+// str = "00" + str;
+// str = str.slice(-3);
+// console.log(str, "wyświetla oporawnie w https://jsfiddle.net/");
 
 // // let und = undefined (przekonwertuj na Boolean)
 // let und = undefined;
@@ -51,7 +56,23 @@
 
 //e) stwórz pustą tablicę za pomocą new Array() i dodaj do niej 3 elementy za pomocą .push(), wyświetl wynik w konsoli
 
+// let emptyArray = Array()
+
+// emptyArray.push("Ford")
+// emptyArray.push("Porsche")
+// emptyArray.push("Bmw")
+
+// console.log(emptyArray)
+
 //f) swtórz pusty obiekt za pomocą new Object() i dodaj do niego 3 klucze z wartościami, wyświetl wynik w konsoli
+
+let emptyObject = new Object();
+
+emptyObject.key1 = "values1";
+emptyObject.key2 = "values2";
+emptyObject.key3 = "value3";
+
+console.log(emptyObject);
 
 //g)* opisz krótko czym dokładnie jest typ NaN
 
