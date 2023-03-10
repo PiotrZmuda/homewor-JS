@@ -112,14 +112,14 @@
 
 // "Przekazana tablica ma X elementów a elementem numer 3 jest X" w miejscach oznaczonych jako X powinny wyświetlać się odpowienie wartości
 
-const arrayOfAnimals = ["dog", "cat", "pig", "cow", "horse", "duck"]
+// const arrayOfAnimals = ["dog", "cat", "pig", "cow", "horse", "duck"]
 
-function checkNumbers(array, index) {
-    for(i = 0; i < array.length; i++){
-        return `Przekazana tablica ma "${array.length}" elementów a elementem numer ${index} jest "${array[index -1]}"`
-    }
-}
-console.log(checkNumbers(arrayOfAnimals,4))
+// function checkNumbers(array, index) {
+//     for(i = 0; i < array.length; i++){
+//         return `Przekazana tablica ma "${array.length}" elementów a elementem numer ${index} jest "${array[index -1]}"`
+//     }
+// }
+// console.log(checkNumbers(arrayOfAnimals,3))
 
 //e) napisz funkcję która przyjmie obiekt testPerson i zwróci komunikat "Pan/i (imię) (nazwisko) ma (wiek) lat oraz (wzrost) cm wzrostu". Możesz zdefiniować inną osobę i użyc funkcji ponownie.
 
@@ -140,12 +140,42 @@ console.log(checkNumbers(arrayOfAnimals,4))
 //f) napisz funkcję która przyjmie obiekt testPerson oraz drugi parametr. Funkcja powinna zmienić wartośc jednego z klucza w obiekcie.
 //  Spróbuj zmodyfikować na przykład wiek.
 
-//==========================
+// let testPerson = {
+//   name: "Jan",
+//   surname: "Kowalski",
+//   age: 20,
+//   height: 180,
+// };
+// testPerson.age = 30
+// console.log(testPerson)
+
+// function modifyObject(array, value){
+//     array.age = value
+// }
+
+
 
 //g) napisz funkcję która przyjmie jeden parametr. Jeśli parametr nie jest typu Number, funkcja powinna zwrócić informację w konsoli, że przyjmowany jest tylko typ number. Jeśli przekazana wartość jest typu Number:
 // - gdy cyfra jest podzielna przez 3 i 5, niech zwróci string "FizzBuzz"
 // - gdy cyfra jest podzielna przez 3, niech zwróci string "Fizz"
 // - gdy cyfra jest podzielna przez 5, niech zwróci string "Buzz"
+
+// function checkNumbers(paramater){
+//     if(typeof paramater !== typeof 1){
+//         console.log("przyjmowany jest tylko typ number")
+//     }else if(paramater % 3 == 0 && paramater % 5 == 0){
+//         console.log("FizzBuzz")
+//     }else if(paramater % 3 == 0){
+//         console.log("Fizz")
+//     }else if(paramater % 5 == 0){
+//         console.log("buzz")
+//     } else{
+//         console.log(`"cyfra ${paramater} nie jest podzielna przez 3 i przez 5"`)
+//     }
+// }
+
+// checkNumbers(3)
+
 
 //h napisz funkcję która przyjmie numer a następnie sprawdzi czy cyfra jest parzysta i zwróci informację. Użyj operatora trójargumentowego
 
