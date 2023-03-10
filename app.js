@@ -179,6 +179,12 @@
 
 //h napisz funkcję która przyjmie numer a następnie sprawdzi czy cyfra jest parzysta i zwróci informację. Użyj operatora trójargumentowego
 
+// function checkNumbers(number){
+// const result = number % 2 == 0? `liczba ${number} jest parzysta` : `liczba ${number} jest nie parzysta`
+// return result
+// }
+// console.log(checkNumbers(10))
+
 //j)* napisz funkcję która wylosuje i zwróci liczbę od 1 do 10
 
 //j)** napisz funkcję która przyjmie dwie liczby, a następnie wylosuje i zwróci liczbę z podanego zakresu
