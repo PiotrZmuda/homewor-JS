@@ -66,17 +66,22 @@
 
 //f) swtórz pusty obiekt za pomocą new Object() i dodaj do niego 3 klucze z wartościami, wyświetl wynik w konsoli
 
-let emptyObject = new Object();
+// let emptyObject = new Object();
 
-emptyObject.key1 = "values1";
-emptyObject.key2 = "values2";
-emptyObject.key3 = "value3";
+// emptyObject.key1 = "values1";
+// emptyObject.key2 = "values2";
+// emptyObject.key3 = "value3";
 
-console.log(emptyObject);
+// console.log(emptyObject);
 
 //g)* opisz krótko czym dokładnie jest typ NaN
 
+// " NaN = "Not a Number" Jest to specjalna wartość zmiennoprzecinkowa, która oznacza, że wynik operacji nie został zdefiniowany lub nie można go przedstawić jako liczby rzeczywistej np 0 podzielone przez 0 daje NaN."
+
 //h)** znajdź w sieci informacje o typie Symbol i opisz go krótko
+
+// " Symbole są niezmienne (nie można ich zmienić) i są unikalne W Symbolu dostępne są różne metody i różne właściwości symbolu.
+//Jeśli ten sam fragment kodu jest używany w różnych programach, lepiej jest użyć Symbol w kluczu obiektowym. To dlatego, że możesz używać tej samej nazwy klucza w różnych kodach i unikać problemów z powielaniem. "
 
 //--------------------------
 //2. FUNKCJE & WARUNKI
@@ -84,22 +89,58 @@ console.log(emptyObject);
 
 //a) napisz funkcję która przyjmie trzy parametry i zwróci ich sumę. Wyświetl w konsoli wynik dodawania dowolnych trzech liczb
 
+// function addNumbers(num1,num2,num3){
+//     return num1 + num2 + num3
+// }
+// console.log(addNumbers(2,3,5))
+
 //b) napisz funkcję która przymie dwa parametry, wysokość i podstawę trójkąta a następnie obliczy i zwróci pole trójkąta. Przekaż do funkcji dowolne wartości i wyświetl w konsoli wynik
+
+// function triangleArea(base, height){
+//     return 1/2 * base * height
+// }
+
+// console.log(triangleArea(20,10))
 
 //c) napisz funkcję która przyjmie aktualny wiek i obliczy oraz zwróci informację ile lat minęło od 18 urodzin. Jeśli podany wiek będzie mniejszy niż 18, użyj if aby zwrócić taką informację
 
+// const checkAge = age => age < 18 ? "Wrong age" : `"${age - 18}"`
+
+// console.log(checkAge(15));
+
 //d) napisz funkcję która przyjmie tablicę z co najmniej 3 elementami i zwróci następujący komunikat: "Przekazana tablica ma X elementów a elementem numer 3 jest X" w miejscach oznaczonych jako X powinny wyświetlać się odpowienie wartości
+
+// "Przekazana tablica ma X elementów a elementem numer 3 jest X" w miejscach oznaczonych jako X powinny wyświetlać się odpowienie wartości
+
+const arrayOfAnimals = ["dog", "cat", "pig", "cow", "horse", "duck"]
+
+function checkNumbers(array, index) {
+    for(i = 0; i < array.length; i++){
+        return `Przekazana tablica ma "${array.length}" elementów a elementem numer ${index} jest "${array[index -1]}"`
+    }
+}
+console.log(checkNumbers(arrayOfAnimals,4))
 
 //e) napisz funkcję która przyjmie obiekt testPerson i zwróci komunikat "Pan/i (imię) (nazwisko) ma (wiek) lat oraz (wzrost) cm wzrostu". Możesz zdefiniować inną osobę i użyc funkcji ponownie.
 
 // let testPerson = {
-//     name: "Jan",
-//     surname: "Kowalski",
-//     age: 20,
-//     height: 180
-// }
+//   name: "Jan",
+//   surname: "Kowalski",
+//   age: 20,
+//   height: 180,
+// };
 
-//f) napisz funkcję która przyjmie obiekt testPerson oraz drugi parametr. Funkcja powinna zmienić wartośc jednego z klucza w obiekcie. Spróbuj zmodyfikować na przykład wiek.
+// function person(obj) {
+//   for (key in obj) {
+//     return console.log(`"Pan/i ${obj.name} ${obj.surname} ma ${obj.age} lat oraz ${obj.height} cm wzrostu"`);
+//   }
+// }
+// person(testPerson)
+
+//f) napisz funkcję która przyjmie obiekt testPerson oraz drugi parametr. Funkcja powinna zmienić wartośc jednego z klucza w obiekcie.
+//  Spróbuj zmodyfikować na przykład wiek.
+
+//==========================
 
 //g) napisz funkcję która przyjmie jeden parametr. Jeśli parametr nie jest typu Number, funkcja powinna zwrócić informację w konsoli, że przyjmowany jest tylko typ number. Jeśli przekazana wartość jest typu Number:
 // - gdy cyfra jest podzielna przez 3 i 5, niech zwróci string "FizzBuzz"
