@@ -209,25 +209,98 @@
 
 //a) napisz pętlę która odliczy od 1 do 9
 
-// for(i = 1; i <= 9; i++)
-// console.log(i)
+// for (let i = 1; i <= 9; i++) {
+//   console.log(i);
+// }
 
 //b) napisz pętlę która odliczy od 9 do 1
+
+// for (let i = 9; i >= 1; i--) {
+//   console.log(i);
+// }
+
 //c) napisz pętlę która odliczy od 5 do 15
+
+// let i = 5;
+// while (i < 15) {
+//   console.log(i);
+//   i++;
+// }
+
 //d) napisz pętlę która odliczy od 0 do -10
-//e) napisz pętlę która odliczy od 1 do 2, iteracja co 2
+
+// let i = 0
+// while(i >= -10){
+//     console.log(i)
+//     i--
+// }
+
+//e) napisz pętlę która odliczy od 1 do 20, iteracja co 2
+
+// for (let i = 1; i <= 20; i += 2) {
+//   console.log(i);
+// }
+
 //f) napisz pętlę która odliczy od 10 do -10, iteracja co 4
+
+// for (let i = 10; i >= -10; i--) {
+//   console.log(i);
+// }
+
 //g)* napisz pętlę, ktora będzie odliczać od 1 do 100, ale iteracja z każdym wykonaniem będzie rosła dwukrotnie, czyli 1, 2, 4, 8...
+
+// for (let i = 1; i < 100; i *= 2) {
+//   console.log(i);
+// }
+
 //h)* napisz pętlę która będzie odliczać od 1 do 10, ale wyświetli tylko nieparzyste wartości
+
+// for(let i = 1; i < 10; i++){
+//     if(i % 2 == 0){
+//         console.log(i)
+//     }
+// }
+
 //i)* napisz pętlę która odliczy od 1 do 10, i wyświetli w konsoli informację o tym czy wyświetlona cyfram jest parzysta czy nie, możesz użyć operatora trójargumentowego
+
+// for (let i = 1; i <= 10; i++) {
+//  const result =  i % 2 == 0 ? `${i} jest liczbą parzystą` : `${i} jest liczbą nie parzystą`;
+//  console.log(result)
+// }
 
 //Uwaga! kolejne pętle trzeba napisać w funkcji
 
 //j) napisz funkcję, która przyjmie numer i w pętli odliczy od 1 do podanej wartości
+
+// function deduct(number) {
+//   for (i = 1; i <= number; i++) {
+//     console.log(i);
+//   }
+// }
+
+// deduct(8);
+
 //k) napisz funkcję, która przyjmie numer i w pętli odliczy od 1 do 50, ale iteracja będzie się odbywać co podaną wartość. (Jeśli argumentem przekazanym do funkcji jest 3, to pętla ma odliczać 3,6,9 itp.)
+
+// function deduct(number) {
+//   for (i = 0; i <= 50; i+=number) {
+//     console.log(i);
+//   }
+// }
+
+// deduct(3);
 
 //l) napisz funkcję która przyjmie tablicę arrNames i wyświetli w konsoli przywitanie dla każdej z osób
 // const arrNames = ["Ksawery", "Zenobiusz", "Klementyna", "Apolonia", "Jeremiasz", "Bernadetta"]
+
+// const arrNames = ["Ksawery", "Zenobiusz", "Klementyna", "Apolonia", "Jeremiasz", "Bernadetta"]
+
+// function sayHello(array){
+//     for(i = 0; i < array.length; i++){
+//         console.log("Hello " + array[i])
+//     }
+// }
+// sayHello(arrNames)
 
 //ł) napisz funkcję która przymie tablicę arrObjects i wyświetli dla każdego obiektu informację "przed Tobą stoi (kolor) (marka)", np niebieski Mustang.
 // const arrObjects = [{
