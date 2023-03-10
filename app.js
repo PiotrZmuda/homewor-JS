@@ -123,20 +123,20 @@
 
 //e) napisz funkcję która przyjmie obiekt testPerson i zwróci komunikat "Pan/i (imię) (nazwisko) ma (wiek) lat oraz (wzrost) cm wzrostu". Możesz zdefiniować inną osobę i użyc funkcji ponownie.
 
-let testPerson = {
-  name: "Jan",
-  surname: "Kowalski",
-  age: 20,
-  height: 180,
-};
+// let testPerson = {
+//   name: "Jan",
+//   surname: "Kowalski",
+//   age: 20,
+//   height: 180,
+// };
 
-function person(obj){
-    console.log(`"Pan/i ${obj.name} ${obj.surname} ma ${obj.age} lat oraz ${obj.height} cm wzrostu"`)
-}
+// function person(obj){
+//     console.log(`"Pan/i ${obj.name} ${obj.surname} ma ${obj.age} lat oraz ${obj.height} cm wzrostu"`)
+// }
 
-person(testPerson)
+// person(testPerson)
 
-//f) napisz funkcję która przyjmie obiekt testPerson oraz drugi parametr. Funkcja powinna zmienić wartośc jednego z klucza w obiekcie.
+// f) napisz funkcję która przyjmie obiekt testPerson oraz drugi parametr. Funkcja powinna zmienić wartośc jednego z klucza w obiekcie.
 //  Spróbuj zmodyfikować na przykład wiek.
 
 // let testPerson = {
@@ -145,14 +145,13 @@ person(testPerson)
 //   age: 20,
 //   height: 180,
 // };
-// testPerson.age = 30
-// console.log(testPerson)
 
-// function modifyObject(array, value){
-//     array.age = value
+// function modifyObject(obj,newAge) {
+//   obj.age = newAge;
 // }
+// modifyObject(testPerson,30);
 
-
+// console.log(testPerson);
 
 //g) napisz funkcję która przyjmie jeden parametr. Jeśli parametr nie jest typu Number, funkcja powinna zwrócić informację w konsoli, że przyjmowany jest tylko typ number. Jeśli przekazana wartość jest typu Number:
 // - gdy cyfra jest podzielna przez 3 i 5, niech zwróci string "FizzBuzz"
@@ -175,7 +174,6 @@ person(testPerson)
 
 // checkNumbers(3)
 
-
 //h napisz funkcję która przyjmie numer a następnie sprawdzi czy cyfra jest parzysta i zwróci informację. Użyj operatora trójargumentowego
 
 // function checkNumbers(number){
@@ -189,7 +187,7 @@ person(testPerson)
 // function getRandomNumber(max) {
 //     return Math.floor(Math.random() * max);
 //   }
-  
+
 //   console.log(getRandomNumber(10));
 
 //j)** napisz funkcję która przyjmie dwie liczby, a następnie wylosuje i zwróci liczbę z podanego zakresu
@@ -200,7 +198,6 @@ person(testPerson)
 //     return Math.floor(Math.random() * (max - min + 1) + min);
 //   }
 //   console.log(getRandomNumber(10, 20));
-  
 
 //k)*** wyszukaj w internecie metody Javascriptowe Math. i użyj trzech z nich aby napisać funkcje wykonujące działania według Twojego własnego pomysłu.
 
@@ -211,6 +208,10 @@ person(testPerson)
 //uwaga! Możesz spróbować każdą z pętli napisać w funkcji
 
 //a) napisz pętlę która odliczy od 1 do 9
+
+// for(i = 1; i <= 9; i++)
+// console.log(i)
+
 //b) napisz pętlę która odliczy od 9 do 1
 //c) napisz pętlę która odliczy od 5 do 15
 //d) napisz pętlę która odliczy od 0 do -10
