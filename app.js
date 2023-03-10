@@ -123,19 +123,18 @@
 
 //e) napisz funkcję która przyjmie obiekt testPerson i zwróci komunikat "Pan/i (imię) (nazwisko) ma (wiek) lat oraz (wzrost) cm wzrostu". Możesz zdefiniować inną osobę i użyc funkcji ponownie.
 
-// let testPerson = {
-//   name: "Jan",
-//   surname: "Kowalski",
-//   age: 20,
-//   height: 180,
-// };
+let testPerson = {
+  name: "Jan",
+  surname: "Kowalski",
+  age: 20,
+  height: 180,
+};
 
-// function person(obj) {
-//   for (key in obj) {
-//     return console.log(`"Pan/i ${obj.name} ${obj.surname} ma ${obj.age} lat oraz ${obj.height} cm wzrostu"`);
-//   }
-// }
-// person(testPerson)
+function person(obj){
+    console.log(`"Pan/i ${obj.name} ${obj.surname} ma ${obj.age} lat oraz ${obj.height} cm wzrostu"`)
+}
+
+person(testPerson)
 
 //f) napisz funkcję która przyjmie obiekt testPerson oraz drugi parametr. Funkcja powinna zmienić wartośc jednego z klucza w obiekcie.
 //  Spróbuj zmodyfikować na przykład wiek.
@@ -187,7 +186,21 @@
 
 //j)* napisz funkcję która wylosuje i zwróci liczbę od 1 do 10
 
+// function getRandomNumber(max) {
+//     return Math.floor(Math.random() * max);
+//   }
+  
+//   console.log(getRandomNumber(10));
+
 //j)** napisz funkcję która przyjmie dwie liczby, a następnie wylosuje i zwróci liczbę z podanego zakresu
+
+// function getRandomNumber(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+//   }
+//   console.log(getRandomNumber(10, 20));
+  
 
 //k)*** wyszukaj w internecie metody Javascriptowe Math. i użyj trzech z nich aby napisać funkcje wykonujące działania według Twojego własnego pomysłu.
 
