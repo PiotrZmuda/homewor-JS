@@ -303,19 +303,32 @@
 // sayHello(arrNames)
 
 //ł) napisz funkcję która przymie tablicę arrObjects i wyświetli dla każdego obiektu informację "przed Tobą stoi (kolor) (marka)", np niebieski Mustang.
-// const arrObjects = [{
-//     brand: "Mustang",
-//     color: "niebieski"
-// }, {
-//     brand: "Tesla",
-//     color: "czarna"
-// }, {
-//     brand: "Polonez",
-//     color: "żółty"
-// }, {
-//     brand: "Toyota",
-//     color: "fioletowa"
-// }]
+
+// // const arrObjects = [
+// //   {
+// //     brand: "Mustang",
+// //     color: "niebieski",
+// //   },
+// //   {
+// //     brand: "Tesla",
+// //     color: "czarna",
+// //   },
+// //   {
+// //     brand: "Polonez",
+// //     color: "żółty",
+// //   },
+// //   {
+// //     brand: "Toyota",
+// //     color: "fioletowa",
+// //   },
+// // ];
+
+// function cars(array) {
+//   for (key of array) {
+//     console.log(`"przed Tobą stoi ${key.color} ${key.brand}""`);
+//   }
+// }
+// cars(arrObjects);
 
 //m) napisz funkcję która przyjmie tablic arrNumbers i wyświetli w konsoli tylko przyste elementy tablicy
 
