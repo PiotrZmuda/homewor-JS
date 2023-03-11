@@ -351,43 +351,28 @@
 // - za pomocą push umieści numery parzyste w tablicy arrEven
 // - na końcu zwróci obiekt z tymi trzema tablicami
 
-const arrTypes = [
-  2,
-  4,
-  5,
-  undefined,
-  null,
-  "val",
-  NaN,
-  7,
-  10,
-  333,
-  "874",
-  22,
-  21,
-  400,
-  "400",
-  "undefined",
-];
-const arrOther = [];
-const arrNubers = [];
-const arrEven = [];
+// const arrTypes = [2,4,5,undefined, null, "val", NaN, 7, 10, 333, "874", 22, 21, 400, "400", "undefined" ]
 
-function checkType(array, other, number, even) {
-  for (i = 0; i < array.length; i++) {
-    if (typeof array[i] !== typeof 1) {
-      other.push(array[i]);
-    } else if (typeof array[i] === typeof 1) {
-      number.push(array[i]);
-    }
-  }
-}
+//   const arrOther = [];
+//   const arrNubers = [];
+//   const arrEven = [];
 
-checkType(arrTypes, arrOther, arrNubers, arrEven);
+//   function checkType(array, other, number, even) {
+//     for (i = 0; i < array.length; i++) {
+//       if (typeof array[i] !== typeof 1) {
+//         other.push(array[i]);
+//       } else if (typeof array[i] === typeof 1) {
+//         number.push(array[i]);
+//       }
+//     }
+//     even.push(array, other, number)
+//   }
 
-console.log("arrOther", arrOther);
-console.log("arrNubers", arrNubers);
-console.log("arrEven", arrEven);
+//   checkType(arrTypes, arrOther, arrNubers, arrEven);
+
+//   console.log("arrOther", arrOther);
+//   console.log("arrNubers", arrNubers);
+//   console.log("arrEven", arrEven);
 
 //--------------------------
 // METODY
@@ -395,31 +380,48 @@ console.log("arrEven", arrEven);
 
 //a) za pomocą metody map wyloguj przywitanie dla każdej osoby z tablicy names
 
-// const names = ["Seba", "Kari", "Mati", "Andżi"]
+// const names = ["Seba", "Kari", "Mati", "Andżi"];
+
+// const greetPeople = names.map((name) => "siemka " + name);
+
+// console.log(greetPeople);
 
 //b) za pomocą metody filter stwórz nową tablicę z tablicy array10 z parzystymi liczbami
 
-// const array10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const array10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const checkNumbers = array10.filter((number) => number % 2 == 0);
+
+// console.log(checkNumbers);
 
 //c) użyj filter na tablicy people aby zwrócić tablicę tylko z kobietami
 
-// const people = [{
+// const people = [
+//   {
 //     name: "Tomasz",
 //     lastname: "Kowalski",
 //     gender: "male",
-// }, {
+//   },
+//   {
 //     name: "Karol",
 //     lastname: "Nowak",
 //     gender: "male",
-// }, {
+//   },
+//   {
 //     name: "Joanna",
 //     lastname: "Kowalska",
 //     gender: "female",
-// }, {
+//   },
+//   {
 //     name: "Anna",
 //     lastname: "Nowak",
 //     gender: "female",
-// }]
+//   },
+// ];
+
+// const womanArray = people.filter((key) => key.gender == "female");
+
+// console.log(womanArray);
 
 //d) użyj metod takich jak split i sort aby zmienną shopping przekonwertować na tablicę z listą zakupów. Każde słowo powinno być osobną pozycją w tablicy. Ponad to posortuj wartości alfabetycznie. Spróbuj też ujednolicić wielkość liter aby lista była bardziej czytelna.
 
