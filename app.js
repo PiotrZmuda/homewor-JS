@@ -332,18 +332,18 @@
 
 //m) napisz funkcję która przyjmie tablic arrNumbers i wyświetli w konsoli tylko przyste elementy tablicy
 
-const arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function checkNumbers(array) {
-  for (i = 0; i < array.length; i++) {
-    if (array[i] % 2 == 0) {
-      console.log(array[i]);
-    } else {
-      continue;
-    }
-  }
-}
-checkNumbers(arrNumbers);
+// function checkNumbers(array) {
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] % 2 == 0) {
+//       console.log(array[i]);
+//     } else {
+//       continue;
+//     }
+//   }
+// }
+// checkNumbers(arrNumbers);
 
 //n)* napisz funkcję, która przeiteruje po tablicy arrTypes i:
 // - za pomocą push umieści elementy o typie innym niż number w tablicy arrOther
@@ -351,11 +351,43 @@ checkNumbers(arrNumbers);
 // - za pomocą push umieści numery parzyste w tablicy arrEven
 // - na końcu zwróci obiekt z tymi trzema tablicami
 
-// const arrTypes = [2,4,5,undefined, null, "val", NaN, 7, 10, 333, "874", 22, 21, 400, "400", "undefined" ]
-// ​
-// const arrOther = []
-// const arrNubers = []
-// const arrEven = []
+const arrTypes = [
+  2,
+  4,
+  5,
+  undefined,
+  null,
+  "val",
+  NaN,
+  7,
+  10,
+  333,
+  "874",
+  22,
+  21,
+  400,
+  "400",
+  "undefined",
+];
+const arrOther = [];
+const arrNubers = [];
+const arrEven = [];
+
+function checkType(array, other, number, even) {
+  for (i = 0; i < array.length; i++) {
+    if (typeof array[i] !== typeof 1) {
+      other.push(array[i]);
+    } else if (typeof array[i] === typeof 1) {
+      number.push(array[i]);
+    }
+  }
+}
+
+checkType(arrTypes, arrOther, arrNubers, arrEven);
+
+console.log("arrOther", arrOther);
+console.log("arrNubers", arrNubers);
+console.log("arrEven", arrEven);
 
 //--------------------------
 // METODY
