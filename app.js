@@ -304,35 +304,46 @@
 
 //ł) napisz funkcję która przymie tablicę arrObjects i wyświetli dla każdego obiektu informację "przed Tobą stoi (kolor) (marka)", np niebieski Mustang.
 
-// // const arrObjects = [
-// //   {
-// //     brand: "Mustang",
-// //     color: "niebieski",
-// //   },
-// //   {
-// //     brand: "Tesla",
-// //     color: "czarna",
-// //   },
-// //   {
-// //     brand: "Polonez",
-// //     color: "żółty",
-// //   },
-// //   {
-// //     brand: "Toyota",
-// //     color: "fioletowa",
-// //   },
-// // ];
+// const arrObjects = [
+//   {
+//     brand: "Mustang",
+//     color: "niebieski",
+//   },
+//   {
+//     brand: "Tesla",
+//     color: "czarna",
+//   },
+//   {
+//     brand: "Polonez",
+//     color: "żółty",
+//   },
+//   {
+//     brand: "Toyota",
+//     color: "fioletowa",
+//   },
+// ];
 
 // function cars(array) {
 //   for (key of array) {
-//     console.log(`"przed Tobą stoi ${key.color} ${key.brand}""`);
+//     console.log(`"przed Tobą stoi ${key.color} ${key.brand}"`);
 //   }
 // }
 // cars(arrObjects);
 
 //m) napisz funkcję która przyjmie tablic arrNumbers i wyświetli w konsoli tylko przyste elementy tablicy
 
-// const arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function checkNumbers(array) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0) {
+      console.log(array[i]);
+    } else {
+      continue;
+    }
+  }
+}
+checkNumbers(arrNumbers);
 
 //n)* napisz funkcję, która przeiteruje po tablicy arrTypes i:
 // - za pomocą push umieści elementy o typie innym niż number w tablicy arrOther
