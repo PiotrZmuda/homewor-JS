@@ -106,7 +106,7 @@
 
 // const checkAge = age => age < 18 ? "Wrong age" : `"${age - 18}"`
 
-// console.log(checkAge(15));
+// console.log(checkAge(30));
 
 //d) napisz funkcję która przyjmie tablicę z co najmniej 3 elementami i zwróci następujący komunikat: "Przekazana tablica ma X elementów a elementem numer 3 jest X" w miejscach oznaczonych jako X powinny wyświetlać się odpowienie wartości
 
@@ -115,11 +115,11 @@
 // const arrayOfAnimals = ["dog", "cat", "pig", "cow", "horse", "duck"]
 
 // function checkNumbers(array, index) {
-//     for(i = 0; i < array.length; i++){
-//         return `Przekazana tablica ma "${array.length}" elementów a elementem numer ${index} jest "${array[index -1]}"`
-//     }
+//   for (i = 0; i < array.length; i++) {
+//     return `Przekazana tablica ma "${array.length}" elementów a elementem numer ${index} jest "${array[index - 1]}"`;
+//   }
 // }
-// console.log(checkNumbers(arrayOfAnimals,3))
+// console.log(checkNumbers(arrayOfAnimals, 3));
 
 //e) napisz funkcję która przyjmie obiekt testPerson i zwróci komunikat "Pan/i (imię) (nazwisko) ma (wiek) lat oraz (wzrost) cm wzrostu". Możesz zdefiniować inną osobę i użyc funkcji ponownie.
 
@@ -172,7 +172,7 @@
 //     }
 // }
 
-// checkNumbers(3)
+// checkNumbers(15)
 
 //h napisz funkcję która przyjmie numer a następnie sprawdzi czy cyfra jest parzysta i zwróci informację. Użyj operatora trójargumentowego
 
@@ -200,6 +200,8 @@
 //   console.log(getRandomNumber(10, 20));
 
 //k)*** wyszukaj w internecie metody Javascriptowe Math. i użyj trzech z nich aby napisać funkcje wykonujące działania według Twojego własnego pomysłu.
+
+// 3 medody Math użyte w poprzednim zadaniu.
 
 //--------------------------
 // FUNKCJE & PĘTLE
@@ -345,7 +347,7 @@
 // }
 // checkNumbers(arrNumbers);
 
-//n)* napisz funkcję, która przeiteruje po tablicy arrTypes i:
+// n)* napisz funkcję, która przeiteruje po tablicy arrTypes i:
 // - za pomocą push umieści elementy o typie innym niż number w tablicy arrOther
 // - za pomocą push umieści elementy o typie number w tablicy arrNumbers
 // - za pomocą push umieści numery parzyste w tablicy arrEven
@@ -434,11 +436,10 @@
 
 //e) połącz litery alfabetu w tablicy alphabet w jeden string a następnie odwróć kolejność aby wynik wyglądał tak: "ZYXWV..."
 
-const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+// const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
+// const reverseAlphabet = alphabet.reduce((sum, next) => {
+//   return alphabet.reverse().join("")
+// });
 
-const reverseAlphabet = alphabet.reduce((sum, next) => {
-  return alphabet.reverse().join("")
-});
-
-console.log(reverseAlphabet);
+// console.log(reverseAlphabet);
