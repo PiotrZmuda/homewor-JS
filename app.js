@@ -432,10 +432,13 @@
 
 // console.log(shoppingList)
 
-// const shoppingList = shopping.map(function(product, index){
-//     return product + index
-// })
-
 //e) połącz litery alfabetu w tablicy alphabet w jeden string a następnie odwróć kolejność aby wynik wyglądał tak: "ZYXWV..."
 
-// const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+
+const reverseAlphabet = alphabet.reduce((sum, next) => {
+  return alphabet.reverse().join("")
+});
+
+console.log(reverseAlphabet);
