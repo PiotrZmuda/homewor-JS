@@ -13,59 +13,33 @@ console.log(checkType1(arrayOfType1));
 
 //b) użyj console log i wyświetl wyniki poniższych działań, dodatkowo wyjaśnij: jaki jest typ wyniku i z czego wynika.
 
-console.log(
-  2 + "2",
-  " - wynik testu wynika z połączenia numbera ze stringiem co ostatecznie daje nam number"
-);
-console.log(
-  2 + 2,
-  "- wynk to typ number i wynika z dodania dwóch typów number do siebie"
-);
-console.log(
-  2 * "8",
-  "- wynik to typ number i wynika z pomnożenia typu number z typem string co daje nam ostatecznie number "
-);
-console.log(
-  2 * 2,
-  "- wynikiem testu jest number, ponieważ pomnożyliśmy dwie liczby przez siebie "
-);
-console.log(
-  1 == true,
-  "- wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false"
-);
-console.log(
-  0 == false,
-  "- wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false"
-);
-console.log(
-  0 == null,
-  " - wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false "
-);
-console.log(
-  null == undefined,
-  "- wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false"
-);
+console.log(2 + "2"," - wynik testu wynika z połączenia numbera ze stringiem co ostatecznie daje nam number");
+
+console.log(2 + 2,"- wynk to typ number i wynika z dodania dwóch typów number do siebie");
+
+console.log(2 * "8","- wynik to typ number i wynika z pomnożenia typu number z typem string co daje nam ostatecznie number ");
+
+console.log(2 * 2,"- wynikiem testu jest number, ponieważ pomnożyliśmy dwie liczby przez siebie ");
+
+console.log(1 == true,"- wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false");
+
+console.log(0 == false,"- wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false");
+
+console.log(0 == null," - wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false ");
+
+console.log(null == undefined,"- wynikiem testu jest wartość boolean ponieważ użyliśmy operatora porównania który zwraca true lub false");
 
 //napisz dodatkowo czym różnią się następujące zapisy: "=", "==", "==="
 
-console.log(
-  "=",
-  "Jest on znakiem przypisania wartości z prawej strony tego znaku, do zmiennej znajdującej się po lewej stronie"
-);
-console.log(
-  "==",
-  "Sprawdza czy wartość po lewej stronie jest równa wartości po prawej stronie bez względu na ich typ"
-);
-console.log(
-  "===",
-  "Sprawdza czy wartość po lewej stronie jest równa wartości po prawej stronie biorąc pod uwagę ich typ"
-);
+console.log("=","Jest on znakiem przypisania wartości z prawej strony tego znaku, do zmiennej znajdującej się po lewej stronie");
+
+console.log("==","Sprawdza czy wartość po lewej stronie jest równa wartości po prawej stronie bez względu na ich typ");
+
+console.log("===","Sprawdza czy wartość po lewej stronie jest równa wartości po prawej stronie biorąc pod uwagę ich typ");
 
 //c) napisz krótko czym różni się typ referencyjny od typu prostego, oraz podaj przykłady tych typów. Odpowiedź wyświetl w konsoli
 
-console.log(
-  "W typach referencyjnych wartość jest przekazywana za pomocą referencji tzn.za pomocą informacji, w jakim miejscu w pamięci jest przetrzymywana wartość i są to tablice, obiekty i funkcje, a w typach prostych informacja jest przekazywana za pomocą wartości i typami prostymi są np. stringi czy numbery. "
-);
+console.log("W typach referencyjnych wartość jest przekazywana za pomocą referencji tzn.za pomocą informacji, w jakim miejscu w pamięci jest przetrzymywana wartość i są to tablice, obiekty i funkcje, a w typach prostych informacja jest przekazywana za pomocą wartości i typami prostymi są np. stringi czy numbery. ");
 
 //d) spróbuj przekonwertować i wyświetlić w konsoli poniższe wartości:
 
@@ -106,15 +80,11 @@ console.log(emptyObject);
 
 //g)* opisz krótko czym dokładnie jest typ NaN
 
-console.log(
-  "NaN Not a Number Jest to specjalna wartość zmiennoprzecinkowa, która oznacza, że wynik operacji nie został zdefiniowany lub nie można go przedstawić jako liczby rzeczywistej np 0 podzielone przez 0 daje NaN."
-);
+console.log("NaN Not a Number Jest to specjalna wartość zmiennoprzecinkowa, która oznacza, że wynik operacji nie został zdefiniowany lub nie można go przedstawić jako liczby rzeczywistej np 0 podzielone przez 0 daje NaN.");
 
 //h)** znajdź w sieci informacje o typie Symbol i opisz go krótko
 
-console.log(
-  "Symbole są niezmienne (nie można ich zmienić) i są unikalne W Symbolu dostępne są różne metody i różne właściwości symbolu.Jeśli ten sam fragment kodu jest używany w różnych programach, lepiej jest użyć Symbol w kluczu obiektowym. To dlatego, że możesz używać tej samej nazwy klucza w różnych kodach i unikać problemów z powielaniem."
-);
+console.log("Symbole są niezmienne (nie można ich zmienić) i są unikalne W Symbolu dostępne są różne metody i różne właściwości symbolu.Jeśli ten sam fragment kodu jest używany w różnych programach, lepiej jest użyć Symbol w kluczu obiektowym. To dlatego, że możesz używać tej samej nazwy klucza w różnych kodach i unikać problemów z powielaniem.");
 
 //--------------------------
 //2. FUNKCJE & WARUNKI
@@ -137,8 +107,7 @@ console.log(triangleArea(20, 10));
 
 //c) napisz funkcję która przyjmie aktualny wiek i obliczy oraz zwróci informację ile lat minęło od 18 urodzin. Jeśli podany wiek będzie mniejszy niż 18, użyj if aby zwrócić taką informację
 
-const checkAge = (age) =>
-  age < 18 ? "Wrong age" : `"Od 18 urodzin mineło ${age - 18} lat"`;
+const checkAge = (age) => age < 18 ? "Wrong age" : `"Od 18 urodzin mineło ${age - 18} lat"`;
 
 console.log(checkAge(30));
 
@@ -148,9 +117,7 @@ const arrayOfAnimals = ["dog", "cat", "pig", "cow", "horse", "duck"];
 
 function checkAnimals(array, index) {
   for (l = 0; l < array.length; l++) {
-    return `Przekazana tablica ma "${
-      array.length
-    }" elementów a elementem numer ${index} jest "${array[index - 1]}"`;
+    return `Przekazana tablica ma "${array.length}" elementów a elementem numer ${index} jest "${array[index - 1]}"`;
   }
 }
 console.log(checkAnimals(arrayOfAnimals, 3));
@@ -165,9 +132,7 @@ let testPerson = {
 };
 
 function person(obj) {
-  console.log(
-    `"Pan/i ${obj.name} ${obj.surname} ma ${obj.age} lat oraz ${obj.height} cm wzrostu"`
-  );
+  console.log(`"Pan/i ${obj.name} ${obj.surname} ma ${obj.age} lat oraz ${obj.height} cm wzrostu"`);
 }
 
 person(testPerson);
@@ -213,10 +178,7 @@ checkNumbers(15);
 //h napisz funkcję która przyjmie numer a następnie sprawdzi czy cyfra jest parzysta i zwróci informację. Użyj operatora trójargumentowego
 
 function checkNumbers2(number) {
-  const result =
-    number % 2 == 0
-      ? `liczba ${number} jest parzysta`
-      : `liczba ${number} jest nie parzysta`;
+  const result = number % 2 == 0 ? `liczba ${number} jest parzysta` : `liczba ${number} jest nie parzysta`;
   return result;
 }
 console.log(checkNumbers2(10));
@@ -305,8 +267,7 @@ for (let i = 1; i < 10; i++) {
 //i)* napisz pętlę która odliczy od 1 do 10, i wyświetli w konsoli informację o tym czy wyświetlona cyfram jest parzysta czy nie, możesz użyć operatora trójargumentowego
 
 for (let i = 1; i <= 10; i++) {
-  const result =
-    i % 2 == 0 ? `${i} jest liczbą parzystą` : `${i} jest liczbą nie parzystą`;
+  const result = i % 2 == 0 ? `${i} jest liczbą parzystą` : `${i} jest liczbą nie parzystą`;
   console.log(result);
 }
 
@@ -400,24 +361,7 @@ checkNumbers3(arrNumbers);
 // - za pomocą push umieści numery parzyste w tablicy arrEven
 // - na końcu zwróci obiekt z tymi trzema tablicami
 
-const arrTypes = [
-  2,
-  4,
-  5,
-  undefined,
-  null,
-  "val",
-  NaN,
-  7,
-  10,
-  333,
-  "874",
-  22,
-  21,
-  400,
-  "400",
-  "undefined",
-];
+const arrTypes = [2,4,5,undefined,null,"val",NaN,7,10,333,"874",22,21,400,"400","undefined",];
 
 const arrOther = [];
 const arrNubers = [];
